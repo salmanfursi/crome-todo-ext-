@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Todo List",
+    "version": "1.0",
+    "description": "A simple todo list Chrome extension",
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "storage"
+    ],
+
+    ekhane menifest er icon preselect thake ok so amader prottek ta imgage er correct pexel e convert korte hobe otherwise it cant be work ok !8 
+    "icons": {
+        "48": "./48.png",     
+        "128": "./128.png"
+    },
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self';"
+    }
+}
+
+webstore cant be upload cause the want 5 doller registration fee 

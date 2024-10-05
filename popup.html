@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <!-- Load React and ReactDOM from local files -->
+  <script src="react.development.js"></script>
+  <script src="react-dom.development.js"></script>
+  <style>
+    body {
+      width: 350px;
+      padding: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+    .todo-container {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+    .todo-title {
+      text-align: center;
+      color: #3498db;
+      margin-top: 0;
+      font-size: 24px;
+    }
+    .todo-input-container {
+      display: flex;
+      margin-bottom: 20px;
+    }
+    .todo-input {
+      flex-grow: 1;
+      padding: 10px;
+      border: 2px solid #3498db;
+      border-radius: 5px 0 0 5px;
+      font-size: 14px;
+    }
+    .todo-button {
+      padding: 10px 15px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .todo-button:hover {
+      background-color: #2980b9;
+    }
+    .add-button {
+      border-radius: 0 5px 5px 0;
+    }
+    .todo-list {
+      list-style-type: none;
+      padding: 0;
+    }
+    .todo-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #ecf0f1;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .todo-item:hover {
+      background-color: #e0e6e8;
+    }
+    .todo-item.completed {
+      opacity: 0.6;
+    }
+    .todo-item-content {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+    }
+    .todo-checkbox {
+      margin-right: 10px;
+      transform: scale(1.2);
+    }
+    .todo-text {
+      font-size: 14px;
+    }
+    .completed .todo-text {
+      text-decoration: line-through;
+    }
+    .delete-button {
+      background-color: #e74c3c;
+      border-radius: 5px;
+      padding: 5px 10px;
+      font-size: 12px;
+    }
+    .delete-button:hover {
+      background-color: #c0392b;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <!-- Load your custom JavaScript -->
+  <script src="popup.js"></script>
+</body>
+</html>
